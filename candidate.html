@@ -39,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">{CANDIDATE_NAME}</a>
+          <a class="navbar-brand" href="#">Bernstein</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" action="search_candidate" method="post">
@@ -55,29 +55,21 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>What is Bernstein?</h1>
-        <p>Bernstein lets you discover if your politican is being influenced by dark money, as well as the likely political positions of the anonymous groups funding him or her. Enter a candidate's name in the search bar at the top right corner to get started.</p>
+        <h1>{CANDIDATE_NAME}</h1>
+        <p>{CANDIDATE_INFO}</p>
       </div>
     </div>
 
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
-          <h2>What is dark money?</h2>
-          <p>Dark money is one of the consequences of the controversial Supreme Court case <i> FEC v. Citizens United</i>. It refers to potentially unlimited funds that are given by organizations and corporations to politicians. In addition, these corporations and organizations are allowed to remain anonymous. </p>
-          <p><a class="btn btn-default" href="https://en.wikipedia.org/wiki/Dark_money" role="button" target = "_blank">View details &raquo;</a></p>
+        <div class="col-md-8">
+            {CANDIDATE_PLOT}
         </div>
         <div class="col-md-4">
-          <h2>Why is it a problem?</h2>
-          <p>The unlimited amounts of dark money that politicans and organizations receive can be easily used to influence elections. In addition, many believe that dark money is a violation of free speech. Those who have more money and are able to donate large amounts anonymously have more say in politics than those who don't.</p>
-          <p><a class="btn btn-default" href="https://www.publicintegrity.org/2016/01/20/19156/what-political-dark-money-and-it-bad" role="button" target = "_blank">View details &raquo;</a></p>
+          <h2>Predictions</h2>
+          <p>{CANDIDATE_PREDICTIONS}</p>
        </div>
-        <div class="col-md-4">
-          <h2>About Bernstein</h2>
-          <p>Bernstein works by comparing politicians' voting records with the positions of their known donors. We assume that a politican's voting record should correspond perfectly with the position of his or her known donors. However, if there is some disparity, then we know that there is dark money in play.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
       </div>
 
       <hr>
